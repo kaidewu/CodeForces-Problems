@@ -1,7 +1,8 @@
-username = input()
 dis_char = 0
-if username == '' and len(username) > 100:
-    pass
+while True:
+    username = input()
+    if len(username) in range(1, 101):
+        break
 for char in username:
     for i in range(len(username) - 1):
         if char != username[i]:
